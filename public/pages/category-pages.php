@@ -52,7 +52,7 @@ include '../assets/php-reference/transactions.php';
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#"><i class='fas fa-home'></i> Home</a>
+                            <a href="<?php echo public_url(); ?>"><i class='fas fa-home'></i> Home</a>
                         </li>
                         <li>
                             <a href="#">Sport category</a>
@@ -60,7 +60,7 @@ include '../assets/php-reference/transactions.php';
                                 <?php $category = run_query('select name from tblcategories where menu_id = 2', 'Error 404!');
                                 foreach ($category as $cat) {
                                     ?>
-                                    <li><a href="http://" target="_blank" rel="noopener noreferrer"><?php echo $cat['name']; ?></a></li>
+                                    <li><a href="#"><?php echo $cat['name']; ?></a></li>
                                 <?php
                                 }
                                 ?>

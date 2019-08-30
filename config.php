@@ -22,6 +22,8 @@
             ";
     }
 
+    define('P_URL', 'http://localhost:8080/php-server/institute/projects/sport-news-website/');
+
     define('SERVER', 'localhost');
     define('USER','root');
     define('PASSWORD','adminmysql');

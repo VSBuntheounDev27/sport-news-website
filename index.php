@@ -11,7 +11,7 @@ include 'public/assets/php-reference/transactions.php';
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="logo">
-                            <a href="#"><img src="public/assets/images/logos/logo200x200.png" alt=""></a>
+                            <a href="<?php echo public_url(); ?>"><img src="public/assets/images/logos/logo200x200.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -32,10 +32,10 @@ include 'public/assets/php-reference/transactions.php';
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#"><i class='fas fa-home'></i> Home</a>
+                            <a href="<?php echo public_url(); ?>"><i class='fas fa-home'></i> Home</a>
                         </li>
                         <li>
-                            <a href="#">Sport category</a>
+                            <a href="<?php echo public_url(); ?>">Sport category</a>
                             <ul class="sub-menu">
                                 <?php $category = run_query('select name from tblcategories where menu_id = 2', 'Error 404!');
                                 foreach ($category as $cat) {
